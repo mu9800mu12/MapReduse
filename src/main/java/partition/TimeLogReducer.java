@@ -37,6 +37,7 @@ public class TimeLogReducer extends Reducer<Text, Text, Text, IntWritable> {
 
         }
 
+
         // 분석 결과 파일에 데이터 저장하기
         context.write(key, new IntWritable(ipCount));
     }
